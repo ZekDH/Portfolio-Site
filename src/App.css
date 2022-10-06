@@ -1,0 +1,169 @@
+
+#colourStorage{
+  background-color: #5b5c5b;
+  background-color: #2d2e2d;
+  background-color: #b5b5b5;
+  background-color: #dedede;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  color: black;
+  background-color: #ededed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+form{
+  width: 100%;
+  height: 100%;
+}
+
+input{
+  padding: 0.8em;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: none;
+  background-color: #00000030;
+}
+
+textarea{
+  padding: 0.8em;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: none;
+  background-color: #00000030;
+}
+
+button{
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(0.9);
+}
+
+#root{
+  color: black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.universitySelection{
+  color: white;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.pointerHover{
+  cursor: pointer;
+}
+
+.headerPosition{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.body{
+  z-index: -10;
+  overflow-y: auto;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon{
+  padding: 0.6em;
+  border-radius: 1em;
+}
+
+.projectIcon{
+  padding: 0.2em;
+}
+
+.containImage{
+  object-fit: contain;
+}
+
+.AlignLeft{
+  text-align: left;
+}
+
+.AlignRight{
+  text-align: right;
+}
+
+.titleBox{
+  width: 100%;
+  max-width: 1500px;
+}
+
+.exitButton{
+  cursor: pointer;
+  color: black;
+  transition: letter-spacing 0.2s, transform 0.2s, color 0.2s;
+}
+
+.exitButton:hover{
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: scale(1.1);
+}
+
+.titleText{
+  cursor: pointer;
+  color: white;
+  transition: letter-spacing 0.2s, transform 0.2s, color 0.2s;
+}
+
+.titleText:hover{
+  color: black;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: scale(1.1);
+}
+
+.highlightText{
+  color: white;
+  transition: letter-spacing 0.2s, transform 0.2s, color 0.2s;
+}
+
+.highlightText:hover{
+  color: black;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: scale(1.1);
+}
+
+.contactText   {
+  text-align: center;
+  margin: 35px 0 20px 0;
+}
+
+.headerbox{
+    box-shadow: 0px 1px 10px 10px #00000010;
+}
+
+.projectCard{
+  box-shadow: 0px 0px 10px 10px #00000010;
+  aspect-ratio: 1 / 1;
+}
+
+.projectCard:hover{
+  opacity: 100%;
+  transform: scale(1.02);
+}
