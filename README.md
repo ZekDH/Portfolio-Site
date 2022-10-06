@@ -1,4 +1,4 @@
-<h1 align="center">Blockle Website -  <a href="http://portfoliosite.blockle.net/">Link</a> </h1>
+<h1 align="center">Portfolio Website -  <a href="http://portfoliosite.blockle.net/">Link</a> </h1>
 
 <p align="center">This is the portfolio website I created using ReactJS, this was my second react project and I used an external library called rebass for improved responsive sizing<p>
 
