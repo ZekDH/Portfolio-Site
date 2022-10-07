@@ -25,7 +25,8 @@ export default class projectBox extends React.Component {
   componentDidMount(){
 
   }
-
+  
+  //This flips the project card to toggle the information display upon activation
   flipProject(){
     if(this.state.projectShow == false){
       this.setState({
@@ -44,10 +45,12 @@ export default class projectBox extends React.Component {
     return(
       <>
         <Flex className="center" flexWrap='wrap' p={3} height={this.props.height} width={this.props.width} mx={-2}>
+          {/* Text of the project props object is used to register information into the box externally */}
           {this.state.projectShow && <Box sx={{borderRadius: 8}} className="projectCard" width="100%" height="100%"  bg={this.props.mainCol}>
             <Flex px={4} bg={this.props.mainCol} className="headerbox" alignItems='center' fontSize={[ 3, 4, 5 ]} sx={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
                 <Text color="white" p={3} fontWeight='bold'>{this.props.projName}</Text>
                 <Box mx='auto' />
+                {/* This shows the github or site icon based off whether a link was parsed to the object */}
                 {this.props.gitLink != "" && <a color="white" p={2} href={this.props.gitLink} className="exitButton projectIcon"><DiGithubBadge color="white" width="80%" height="80%" /></a>}
                 {this.props.siteLink != "" && <a color="white" p={2} href={this.props.siteLink} className="exitButton projectIcon"><BiLinkExternal color="white" width="80%" height="80%" /></a>}
                 <Text color="white" p={2} onClick={this.flipProject} className="exitButton"><BiX width="100%" height="100%" /></Text>
@@ -67,6 +70,7 @@ export default class projectBox extends React.Component {
             </Flex>
 
           </Box>}
+          {/* This displays the image instead of the project text */}
           {!this.state.projectShow && <Box onClick={this.flipProject} sx={{backgroundImage: "url(" + this.props.img + ")", backgroundSize: 'cover', borderRadius: 8}} className="projectCard pointerHover" width="100%" height="100%" >
             <Text bg={this.props.mainCol} sx={{borderTopLeftRadius: 8, borderTopRightRadius: 8, color: "white"}} fontWeight="bold" fontSize={[ 3, 4, 5 ]} p={3}>{this.props.projName}</Text>
           </Box>}
